@@ -1,0 +1,51 @@
+{
+  "name": "hosco-frontend-test",
+  "description": "Hosco frontend test",
+  "author": "Victor Monserrat",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-centered": "^4.0.4",
+    "@storybook/addon-knobs": "^4.0.4",
+    "@storybook/react": "^4.0.4",
+    "@types/storybook__addon-actions": "^3.4.1",
+    "@types/storybook__addon-knobs": "^3.4.1",
+    "@types/storybook__react": "^4.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "html-webpack-plugin": "^3.2.0",
+    "redux-devtools-extension": "^2.13.5",
+    "typescript": "^3.1.6",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-redux": "^6.0.9",
+    "@types/react-share": "^2.1.1",
+    "@types/redux-form": "^7.4.11",
+    "@types/styled-components": "^4.0.3",
+    "axios": "^0.18.0",
+    "dotenv-webpack": "^1.5.7",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-redux": "^5.1.0",
+    "react-share": "^2.3.1",
+    "redux": "^4.0.1",
+    "redux-form": "^7.4.2",
+    "redux-saga": "^0.16.2",
+    "semantic-ui-react": "^0.83.0",
+    "styled-components": "^4.0.3"
+  },
+  "scripts": {
+    "build": "webpack --config config/webpack/webpack.config.js --mode production",
+    "start": "webpack-dev-server --config config/webpack/webpack.config.js --mode development --open --hot",
+    "build:storybook": "build-storybook -c config/storybook -o build/storybook",
+    "start:storybook": "start-storybook -p 9001 -c config/storybook"
+  }
+}
