@@ -30,7 +30,7 @@
     "@types/react-share": "^2.1.1",
     "@types/redux-form": "^7.4.11",
     "@types/styled-components": "^4.0.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dotenv-webpack": "^1.5.7",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
